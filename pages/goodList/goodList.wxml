@@ -1,0 +1,17 @@
+<view class="container">  
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"  
+    class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">  
+    <view class="item" wx:for="{{list}}" catchtap="clickitem">  
+       <image class="img" mode="aspectFit" src="http://www.xinxinhotel.com:8800/freshfruitbase/{{item.head_img}}"></image>   
+        <view class="topRightView">  
+          <text class="title">{{item.good_name}}</text>
+          <text class="price">￥{{item.good_price}}</text>
+        </view>
+    </view>  
+  </scroll-view>  
+  <view class="body-view">  
+    <loading hidden="{{hidden}}" bindchange="loadingChange">  
+      加载中...  
+    </loading>  
+  </view>  
+</view>

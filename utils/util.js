@@ -16,6 +16,23 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
-module.exports = {
-  formatTime: formatTime
+
+function getOriginalImageSize(e) {
+  var imageSize = {};
+  var originalWidth = e.detail.width;//图片原始宽 
+  var originalHeight = e.detail.height;//图片原始高 
+  var originalScale = originalHeight / originalWidth;//图片高宽比 
+  imageSize.imageHeight = originalHeight;
+  imageSize.imageWidth = originalWidth;
+  console.log('detail: ' + e.dedail)
+  console.log('originalWidth: ' + originalWidth)
+  console.log('originalHeight: ' + originalHeight)
+  return imageSize;
 }
+
+module.exports = {
+  formatTime: formatTime,
+  getOriginalImageSize: getOriginalImageSize
+}
+
+

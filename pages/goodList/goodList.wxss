@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #eeeeee
+}
+
+.img {
+  height: 240rpx;
+  width:240rpx
+}
+
+.topRightView {
+  width: 250px;
+  margin-left: 15rpx;
+  color: black;
+  display: flex;
+  font-size: 30rpx;
+  flex-direction: column;
+}
+
+.price {
+  font-size: 25rpx;
+  color: red;
+  margin-top: 10rpx;
+}

@@ -1,21 +1,31 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/goodList/goodList",
+    "pages/goodsDetail/goodsDetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WXAppletDemo",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "广西土特产",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resources/mall_index_icon.png",
+        "selectedIconPath": "resources/mall_index_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "订单",
+        "iconPath": "resources/order_all_normal.png",
+        "selectedIconPath": "resources/order_all_selected.png"
+      }
+    ]
   }
 }
